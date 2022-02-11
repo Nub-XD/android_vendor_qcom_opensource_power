@@ -24,8 +24,12 @@ LOCAL_SRC_FILES := \
     utils.c \
     list.c \
     hint-data.c \
+    powerhintparser.c \
     Power.cpp \
     main.cpp
+
+LOCAL_C_INCLUDES := external/libxml2/include \
+                    external/icu/icu4c/source/common
 
 LOCAL_CFLAGS += -Wall -Wextra -Werror
 
